@@ -270,3 +270,8 @@ Solve by running:
 ```
 memory.limit(size= 20000) < or whatever memory vector you are using.
 ```
+
+
+## Refrences
+1. https://bioconductor.org/packages/devel/workflows/vignettes/maEndToEnd/inst/doc/MA-Workflow.html
+2. https://sbc.shef.ac.uk/geo_tutorial/tutorial.nb.html
