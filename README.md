@@ -259,10 +259,14 @@ head(as.data.frame(reactome_enrich))[1:6]
 barplot(reactome_enrich)
 ````
 
-* possible error messages encountered if using this code and how to solve them. 
-Error: The size of the connection buffer (196000) was not large enough
-Solve by running: Sys.setenv("VROOM_CONNECTION_SIZE" = 520000 * 2)
-
- Error: cannot allocate vector of size 1.6 GB
-Solve by running: memory.limit(size= 20000) < or whatever memory vector you are using.
- 
+Possible error messages encountered if using this code and how to solve them. 
+- Error: The size of the connection buffer (196000) was not large enough
+Solve by running: 
+```
+Sys.setenv("VROOM_CONNECTION_SIZE" = 520000 * 2)
+```
+- Error: cannot allocate vector of size 1.6 GB
+Solve by running: 
+```
+memory.limit(size= 20000) < or whatever memory vector you are using.
+```
